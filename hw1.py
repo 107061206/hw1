@@ -14,7 +14,7 @@ with open(cwb_filename) as csvfile:
 
 
     sum = list(range(5))    
-    out = list(range(5))
+    output = list(range(5))
     stationid = list(range(5))
 
     stationid = ['C0A880', 'C0F9A0', 'C0G640', 'C0R190', 'C0X260']    
@@ -31,11 +31,11 @@ with open(cwb_filename) as csvfile:
     
     for i in range(5): 
         if sum[i] == 0 :      
-            out[i] = [stationid[i], 'None']                          
+            output[i] = [stationid[i], 'None']                          
         else :
-            out[i] = [stationid[i], sum[i]]
+            output[i] = [stationid[i], sum[i]]
 
 
-    print(out) 
+    print(output) 
      
 
